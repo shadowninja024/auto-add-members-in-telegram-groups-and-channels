@@ -28,7 +28,7 @@ if not client.is_user_authorized():
     	client.sign_in(password=getpass.getpass())
 
 def add_users_to_group():
-    input_file = sys.argv[1]
+    input_file = "/storage/emulated/0/1/auto-add-members-in-telegram-groups-and-channels/members-bot-x-support.csv"
     users = []
     with open(input_file, encoding='UTF-8') as f:
         rows = csv.reader(f,delimiter=",",lineterminator="\n")
